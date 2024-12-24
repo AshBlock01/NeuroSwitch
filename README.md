@@ -43,9 +43,9 @@ client = NeuroSwitchClient(api_key="your_api_key", base_url="your_base_url")
 
 # Send a chat completion request
 response = client.chat_completions(
-    model="NeuroSwitch-GPT-4o",  # Replace with your desired model
+    model="NeuroSwitch-GPT-4o",  # [Optional] Replace with your desired model or you can let the model auto-select
     messages=[{"role": "user", "content": "Tell me a Christmas story."}],
-    mode="adaptive"  # Options: adaptive, turbo, saver
+    mode="adaptive"  # Options: adaptive(flexible), turbo(high-performant models), saver(cost-effective models)
 )
 
 # Print the response
